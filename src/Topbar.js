@@ -3,18 +3,16 @@ import { Box, FormControlLabel, Switch, Grid, Button as MaterialButton } from "@
 
 export const Topbar = () => {
     return (
-        <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
-            <Grid container alignItems="center">
-                <Grid item xs>
-                    <FormControlLabel
-                        control={<Switch checked={true} />}
-                        label="Enable"
-                    />
-                </Grid>
-                <Grid item>
-                    <MaterialButton size="small" variant="outlined" color="secondary">Serialize JSON to console</MaterialButton>
-                </Grid>
-            </Grid>
-        </Box>
+    <Grid container alignItems="center" bgcolor="#cbe8e7" style={{marginTop: "20px"}}>
+        <Grid item xs>
+            <FormControlLabel
+                control={<Switch checked={true} />}
+                label="Enable"
+            />
+        </Grid>
+        <Grid item>
+            <MaterialButton size="small" variant="outlined" color="secondary">Serialize JSON to console</MaterialButton>
+        </Grid>
+    </Grid>
     )
 };
