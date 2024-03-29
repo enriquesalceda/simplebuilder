@@ -1,18 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from "./components/Card";
 
 import React from 'react';
-import {Typography, Paper, Grid} from '@material-ui/core';
+import {Typography, Paper, Grid} from "@mui/material";
 
-import { Toolbox } from '../components/Toolbox';
-import { SettingsPanel } from '../components/SettingsPanel';
-import { Topbar } from '../components/Topbar';
+import { Toolbox } from './Toolbox';
+import { SettingsPanel } from './SettingsPanel';
+import { Topbar } from './Topbar';
 
-import { Container } from '../components/user/Container';
-import { Button } from '../components/user/Button';
-import { Card } from '../components/user/Card';
-import { Text } from '../components/user/Text';
+import { Container } from './Container';
+import { Button } from './Button';
+import { Card } from './Card';
+import { Text } from './Text';
 
 export default function App() {
   return (

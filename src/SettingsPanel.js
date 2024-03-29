@@ -1,4 +1,3 @@
-// components/SettingsPanel.js
 import React from 'react';
 import { Box, Chip, Grid, Typography, Button as MaterialButton, FormControl, FormLabel, Slider } from "@mui/material";
 
@@ -26,7 +25,7 @@ export const SettingsPanel = () => {
                 </FormControl>
                 <MaterialButton
                     variant="contained"
-                    color="default"
+                    color="primary"
                 >
                     Delete
                 </MaterialButton>
