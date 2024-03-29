@@ -15,7 +15,7 @@ import { Text } from './Text';
 
 export default function App() {
   return (
-      <div style={{margin: "0 auto", width: "800px"}}>
+      <div style={{margin: "0 auto", width: "800px", backgroundColor: "000" }}>
           <Grid container spacing={3} style={{paddingTop: "10px"}}>
               <Topbar />
               <Grid item xs>
