@@ -18,7 +18,7 @@ export default function App() {
       <div style={{margin: "0 auto", width: "800px", backgroundColor: "000" }}>
           <Grid container spacing={3} style={{paddingTop: "10px"}}>
               <Topbar />
-              <Grid item xs>
+              <Grid item xs={8}>
                 <Container padding={5} background="#eee">
                     <Card />
                 </Container>
