@@ -13,27 +13,30 @@ import { Button } from './Button';
 import { Card } from './Card';
 import { Text } from './Text';
 
+import { Editor} from "@craftjs/core";
+
 export default function App() {
   return (
       <div style={{margin: "0 auto", width: "800px", backgroundColor: "000" }}>
           <Typography variant="h5" align="center">A super simple page editor</Typography>
-
-          <Grid container spacing={3} style={{paddingTop: "10px"}}>
-              <Topbar />
-              <Grid item xs={8}>
-                <Container padding={5} background="#eee">
-                    <Card />
-                    <Button size="medium" variant="outlined">Click</Button>
-                    <Text size="medium" text="Hi world!" />
-                </Container>
+          <Editor resolver={{Card, Button, Text, Container}}>
+              <Grid container spacing={3} style={{paddingTop: "10px"}}>
+                  <Topbar />
+                  <Grid item xs={8}>
+                      <Container padding={5} background="#eee">
+                          <Card />
+                          <Button size="medium" variant="outlined">Click</Button>
+                          <Text size="medium" text="Hi world!" />
+                      </Container>
+                  </Grid>
+                  <Grid item xs={3}>
+                      <Paper>
+                          <Toolbox />
+                          <SettingsPanel />
+                      </Paper>
+                  </Grid>
               </Grid>
-              <Grid item xs={3}>
-                <Paper>
-                    <Toolbox />
-                    <SettingsPanel />
-                </Paper>
-              </Grid>
-        </Grid>
+          </Editor>
       </div>
   );
 }
