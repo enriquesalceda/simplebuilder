@@ -13,7 +13,7 @@ import { Button } from './Button';
 import { Card } from './Card';
 import { Text } from './Text';
 
-import { Editor} from "@craftjs/core";
+import {Editor, Frame} from "@craftjs/core";
 
 export default function App() {
   return (
@@ -23,11 +23,13 @@ export default function App() {
               <Grid container spacing={3} style={{paddingTop: "10px"}}>
                   <Topbar />
                   <Grid item xs={8}>
-                      <Container padding={5} background="#eee">
-                          <Card />
-                          <Button size="medium" variant="outlined">Click</Button>
-                          <Text size="medium" text="Hi world!" />
-                      </Container>
+                      <Frame>
+                          <Container padding={5} background="#eee">
+                              <Card />
+                              <Button size="medium" variant="outlined">Click</Button>
+                              <Text size="medium" text="Hi world!" />
+                          </Container>
+                      </Frame>
                   </Grid>
                   <Grid item xs={3}>
                       <Paper>
